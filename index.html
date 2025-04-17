@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <!-- Basic Meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cargo - Premium Car Sales & Test Drives</title>
+    <meta name="description" content="Explore the future of driving with Cargo. Premium cars, luxury design, test drives, and top performance vehicles — all in one place." />
+    <meta name="keywords" content="cars, premium cars, test drive, luxury cars, buy car, electric car, vehicle showroom, Cargo" />
+    <meta name="author" content="Cargo" />
+  
+    <!-- Open Graph (Facebook, LinkedIn) -->
+    <meta property="og:title" content="Cargo - Premium Car Sales & Test Drives" />
+    <meta property="og:description" content="Discover premium car performance and book a test drive with Cargo. Experience the future of driving." />
+    <meta property="og:image" content="https://yourdomain.com/assets/images/hero-thumbnail.jpg" />
+    <meta property="og:url" content="https://yourdomain.com/" />
+    <meta property="og:type" content="website" />
+  
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Cargo - Premium Car Sales & Test Drives" />
+    <meta name="twitter:description" content="Premium cars, luxury design, test drives — all in one site." />
+    <meta name="twitter:image" content="https://yourdomain.com/assets/images/hero-thumbnail.jpg" />
+  
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/tailwind.css" />
+    <link rel="stylesheet" href="/global.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  </head>
+  
+
+<body>
+    <div class="bg-base-200">
+        <!-- Navbar -->
+        <header class="bg-white shadow-sm sticky top-0 z-50" x-data="{ mobileOpen: false }">
+            <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+                <!-- Logo --> <a href="/">
+                    <h1 class="text-2xl font-bold text-gray-900">Car<span class="text-red-500">go</span></h1>
+                </a> <!-- Desktop Nav -->
+                <nav class="hidden md:flex space-x-6"> <a href="/" class="text-gray-700 hover:text-red-500 transition">Home</a> <a href="/inventory.html" class="text-gray-700 hover:text-red-500 transition">Inventory</a> <a href="/about.html" class="text-gray-700 hover:text-red-500 transition">About</a> <a href="/contact.html" class="text-gray-700 hover:text-red-500 transition">Contact</a> </nav> <!-- Mobile Menu Button --> <button @click="mobileOpen = !mobileOpen" class="md:hidden text-gray-700 hover:text-red-500 focus:outline-none"> <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg> </button>
+            </div> <!-- Mobile Menu -->
+            <div class="md:hidden px-4 pb-4" x-show="mobileOpen" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 -translate-y-2" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-200" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 -translate-y-2" x-cloak>
+                <nav class="flex flex-col space-y-3"> <a href="/" class="text-gray-700 hover:text-red-500 transition">Home</a> <a href="/inventory.html" class="text-gray-700 hover:text-red-500 transition">Inventory</a> <a href="/about.html" class="text-gray-700 hover:text-red-500 transition">About</a> <a href="/contact.html" class="text-gray-700 hover:text-red-500 transition">Contact</a> </nav>
+            </div>
+        </header>
+        <main class="w-full container mx-auto p-5">
+            <section class="relative bg-[#f5f5f5] text-black min-h-screen flex flex-col justify-center items-center px-6 text-center relative overflow-hidden">
+                <!-- Headline -->
+                <h1 class="text-5xl sm:text-6xl font-light leading-tight max-w-4xl" data-aos="fade-up"> The Future of Driving <br /> Starts <span class="font-semibold">Right Here</span> </h1> <!-- Subheadline -->
+                <p class="mt-4 text-lg text-gray-600 max-w-xl" data-aos="fade-up" data-aos-delay="200"> Premium performance, luxury design, and unmatched innovation — all in one machine. </p> <!-- CTA Buttons -->
+                <div class="mt-8 flex flex-col sm:flex-row items-center gap-4" data-aos="fade-up" data-aos-delay="400"> <a href="/inventory.html" class="bg-black text-white text-sm font-medium px-6 py-3 rounded-full hover:bg-gray-900 transition"> Browse Inventory </a> <a href="#" class="text-sm text-gray-600 hover:underline transition"> Learn More → </a> </div> <!-- Car Image -->
+                <div class="mt-5 w-full max-w-4xl mx-auto px-4" data-aos="zoom-in" data-aos-delay="600">
+                    <figure class="w-full aspect-[16/9] flex items-center justify-center"> <img src="/images/hero-cargo.png" alt="Premium Car" class="w-full h-full object-contain" /> </figure>
+                </div>
+            </section> <!-- Search Bar Section -->
+            <section class="py-8" data-aos="fade-up">
+                <div class="max-w-5xl mx-auto px-4">
+                    <h2 class="text-xl md:text-2xl font-semibold text-gray-900 mb-6 text-center md:text-left" data-aos="fade-up" data-aos-delay="200"> Find great deals from the top-rated dealers </h2>
+                    <form class="flex flex-col md:flex-row gap-4" data-aos="fade-up" data-aos-delay="400">
+                        <!-- Search by model --> <input type="text" placeholder="Search by model, brand, or keyword..." class="flex-1 px-4 py-2.5 rounded-md border border-gray-300 text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 transition" data-aos="zoom-in" data-aos-delay="600" /> <!-- Price range --> <input type="text" placeholder="Price range, e.g. $20k–$50k" class="flex-1 px-4 py-2.5 rounded-md border border-gray-300 text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 transition" data-aos="zoom-in" data-aos-delay="800" /> <!-- Car type --> <select class="md:w-36 px-4 py-2.5 rounded-md border border-gray-300 text-sm text-gray-800 bg-white focus:outline-none focus:ring-2 focus:ring-yellow-500 transition" data-aos="zoom-in" data-aos-delay="1000">
+                            <option value="">Car Type</option>
+                            <option value="sedan">Sedan</option>
+                            <option value="suv">SUV</option>
+                            <option value="convertible">Convertible</option>
+                            <option value="electric">Electric</option>
+                        </select> <!-- Search Button --> <button type="submit" class="px-5 py-2.5 rounded-md bg-red-500 text-sm text-white font-medium shadow-sm hover:bg-red-600 transition" data-aos="zoom-in" data-aos-delay="1200"> Search </button>
+                    </form>
+                </div>
+            </section>
+            <section class="py-28 bg-base-200">
+                <div class="max-w-5xl mx-auto px-4">
+                    <!-- Section Header -->
+                    <div class="text-center mb-14">
+                        <h2 class="text-4xl font-bold text-gray-900" data-aos="fade-up" data-aos-delay="200">Featured Cars</h2>
+                        <p class="text-gray-600 mt-3 text-lg" data-aos="fade-up" data-aos-delay="400">Hot deals, limited stock, and premium rides</p>
+                    </div> <!-- Grid of Cars -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10" data-aos="fade-up" data-aos-delay="600">
+                        <!-- Car Card (Reusable Component) -->
+                        <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-2xl transition-transform duration-300 hover:-translate-y-1 hover:scale-[1.03]">
+                            <!-- Image with Fav Button -->
+                            <div class="relative"> <img src="https://img.freepik.com/premium-photo/tesla-model-x-sports-car-supercar-sportcar-sleek-sport-car-performance-cars-luxury-car-automobile-vehicle-automotive-ai_819901-1682.jpg" alt="Car 1" class="w-full h-40 object-cover transition-transform duration-300 hover:scale-[1.05] hover:brightness-90 rounded-t-2xl"> <!-- Save/Favorite --> <button class="absolute top-3 right-3 bg-white/90 hover:bg-white text-gray-700 rounded-full p-2 shadow-lg transition-all duration-200 ease-out"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart">
+                                        <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                                    </svg> </button> </div> <!-- Card Content -->
+                            <div class="p-6 space-y-4 bg-base-300">
+                                <h3 class="text-lg font-semibold text-gray-900 tracking-wide hover:text-red-500 transition-all duration-300">Tesla Model X</h3>
+                                <div class="space-y-1.5 text-sm text-gray-700">
+                                    <div class="flex justify-between"> <span class="font-medium text-gray-800">Mileage</span> <span>50,345 miles</span> </div>
+                                    <div class="flex justify-between"> <span class="font-medium text-gray-800">Exterior</span> <span>Canyon Red Metallic</span> </div>
+                                    <div class="flex justify-between"> <span class="font-medium text-gray-800">Interior</span> <span>Oyster</span> </div>
+                                </div>
+                                <div class="flex justify-between items-center pt-3"> <span class="text-xl font-bold text-gray-900">$89,999</span> <a href="#" class="bg-red-500 text-white text-sm px-5 py-2.5 rounded-full font-semibold shadow-md hover:bg-red-600 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-red-300 transition-all duration-300"> Book Now </a> </div>
+                            </div>
+                        </div> <!-- Repeat Car Cards for Additional Listings -->
+                        <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-2xl transition-transform duration-300 hover:-translate-y-1 hover:scale-[1.03]">
+                            <div class="relative"> <img src="https://img.freepik.com/premium-photo/tesla-model-x-sports-car-supercar-sportcar-sleek-sport-car-performance-cars-luxury-car-automobile-vehicle-automotive-ai_819901-1682.jpg" alt="Car 2" class="w-full h-40 object-cover transition-transform duration-300 hover:scale-[1.05] hover:brightness-90 rounded-t-2xl"> <button class="absolute top-3 right-3 bg-white/90 hover:bg-white text-gray-700 rounded-full p-2 shadow-lg transition-all duration-200 ease-out"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart">
+                                        <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                                    </svg> </button> </div>
+                            <div class="p-6 space-y-4 bg-base-300">
+                                <h3 class="text-lg font-semibold text-gray-900 tracking-wide hover:text-red-500 transition-all duration-300">Tesla Model X</h3>
+                                <div class="space-y-1.5 text-sm text-gray-700">
+                                    <div class="flex justify-between"> <span class="font-medium text-gray-800">Mileage</span> <span>50,345 miles</span> </div>
+                                    <div class="flex justify-between"> <span class="font-medium text-gray-800">Exterior</span> <span>Canyon Red Metallic</span> </div>
+                                    <div class="flex justify-between"> <span class="font-medium text-gray-800">Interior</span> <span>Oyster</span> </div>
+                                </div>
+                                <div class="flex justify-between items-center pt-3"> <span class="text-xl font-bold text-gray-900">$89,999</span> <a href="#" class="bg-red-500 text-white text-sm px-5 py-2.5 rounded-full font-semibold shadow-md hover:bg-red-600 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-red-300 transition-all duration-300"> Book Now </a> </div>
+                            </div>
+                        </div> <!-- Add more car cards here as needed -->
+                    </div>
+                </div>
+            </section> <!-- Folow -->
+            <!-- Section 1: "Something to Make You Love Us More" -->
+            <section class="bg-white py-28 px-6 sm:px-8 lg:px-10">
+                <div class="max-w-6xl mx-auto px-4 flex flex-col lg:flex-row items-center gap-16">
+                    <!-- Left Side: Image -->
+                    <div class="w-full lg:w-1/2" data-aos="fade-right" data-aos-duration="800" data-aos-delay="100"> <img src="https://img.freepik.com/free-vector/parachute-gift-delivery-concept-emblem_98292-4650.jpg" alt="Luxury Car" class="w-full h-auto transition-transform duration-300 hover:scale-105" /> </div> <!-- Right Side: Content -->
+                    <div class="lg:w-1/2 text-center lg:text-left" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+                        <h2 class="text-4xl font-bold text-gray-900 mb-6"> Something to make you love <span class="text-red-500 italic">Cargo</span> more? </h2>
+                        <p class="text-gray-600 text-lg mb-8 max-w-md mx-auto lg:mx-0"> Discover the premium services and features that set us apart, designed to bring you exceptional quality and peace of mind. </p>
+                        <div class="space-y-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                            <div class="flex items-start gap-4">
+                                <div class="text-red-500 text-2xl">✔️</div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Variety of Car Brands</h4>
+                                    <p class="text-sm text-gray-600">Choose from a curated selection of the world's best brands.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="text-red-500 text-2xl">✔️</div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Easy Booking Process</h4>
+                                    <p class="text-sm text-gray-600">Book a car in just a few steps without any hassle.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="text-red-500 text-2xl">✔️</div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Quality Control</h4>
+                                    <p class="text-sm text-gray-600">We inspect every car to ensure top quality for our users.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="text-red-500 text-2xl">✔️</div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Reliable Customer Service</h4>
+                                    <p class="text-sm text-gray-600">We’re here to help you with any issues—anytime, anywhere.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> <!-- Section: Why Choose Cargo? -->
+            <section class="py-24 bg-white">
+                <div class="max-w-5xl mx-auto px-4 flex flex-col lg:flex-row gap-16 items-center">
+                    <!-- Left Side: Content -->
+                    <div class="lg:w-1/2" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                        <h2 class="text-4xl font-bold text-gray-900 mb-6"> Why Choose <span class="text-red-500 italic">Cargo</span>? </h2>
+                        <p class="text-gray-600 text-lg mb-10"> We go beyond just selling cars. We deliver unmatched service, speed, and trustworthiness that set us apart. </p>
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <!-- Feature 1: Fast Delivery -->
+                            <div class="flex items-start gap-4" data-aos="fade-up" data-aos-delay="200">
+                                <div class="bg-red-100 text-red-600 p-3 rounded-xl"> <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 17v-2a2 2 0 012-2h6l3 3v3a2 2 0 01-2 2H9a2 2 0 01-2-2z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 9V7a4 4 0 014-4h13a2 2 0 012 2v2" />
+                                    </svg> </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-gray-900">Fast Delivery</h3>
+                                    <p class="text-sm text-gray-600">Receive your car in under 48 hours. We prioritize speed and safety.</p>
+                                </div>
+                            </div> <!-- Feature 2: Certified Quality -->
+                            <div class="flex items-start gap-4" data-aos="fade-up" data-aos-delay="300">
+                                <div class="bg-green-100 text-green-600 p-3 rounded-xl"> <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 11c0 1.656-1.343 3-3 3s-3-1.344-3-3 1.343-3 3-3 3 1.344 3 3zm0 0v10m0-10h4a4 4 0 100-8h-4a4 4 0 000 8z" />
+                                    </svg> </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-gray-900">Certified Quality</h3>
+                                    <p class="text-sm text-gray-600">Each car goes through a 200-point quality inspection and comes with a warranty.</p>
+                                </div>
+                            </div> <!-- Feature 3: 24/7 Concierge -->
+                            <div class="flex items-start gap-4" data-aos="fade-up" data-aos-delay="400">
+                                <div class="bg-blue-100 text-blue-600 p-3 rounded-xl"> <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M21 16v-1a4 4 0 00-3-3.87M3 16v-1a4 4 0 013-3.87m14 4.87a4 4 0 01-8 0 4 4 0 018 0zM7 12h.01M7 12a4 4 0 01-4 4" />
+                                    </svg> </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-gray-900">24/7 Concierge</h3>
+                                    <p class="text-sm text-gray-600">Get personalized assistance anytime with our live concierge services.</p>
+                                </div>
+                            </div> <!-- Feature 4: Flexible Financing -->
+                            <div class="flex items-start gap-4" data-aos="fade-up" data-aos-delay="500">
+                                <div class="bg-purple-100 text-purple-600 p-3 rounded-xl"> <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.1 0-2-.9-2-2m4 0a2 2 0 00-2-2m0 0a2 2 0 100 4m0 0v1.5m6.364 1.136a4.5 4.5 0 01-6.364 6.364m6.364-6.364a4.5 4.5 0 00-6.364 6.364" />
+                                    </svg> </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-gray-900">Flexible Financing</h3>
+                                    <p class="text-sm text-gray-600">Choose financing options that fit your budget, no hidden fees or surprises.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- Right Side: Image -->
+                    <div class="lg:w-1/2" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000"> <img src="/assets/images/three-trucks-grassy-sphere.jpg" alt="Car Delivery" class="w-full max-w-md mx-auto lg:mx-0"> </div>
+                </div>
+            </section> <!-- Trusted Partners Section -->
+            <section class="bg-gray-50 py-20 px-4 sm:px-6 lg:px-8">
+                <div class="max-w-5xl mx-auto px-4 text-center">
+                    <h2 class="text-4xl font-semibold text-gray-900 mb-4 tracking-tight">Our Trusted Partners</h2>
+                    <p class="text-lg text-gray-600 mb-12 max-w-2xl mx-auto"> We collaborate with industry leaders to ensure reliable, high-quality vehicle experiences. </p> <!-- Logo Grid with Scroll Animation -->
+                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center justify-items-center" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                        <!-- Logos --> <img src="/images/Ford_logo_flat.svg" alt="Ford" class="h-10 grayscale hover:grayscale-0 hover:scale-105 transition-all duration-300 ease-in-out" /> <img src="/images/Hyundai_logo.svg" alt="Hyundai" class="h-10 grayscale hover:grayscale-0 hover:scale-105 transition-all duration-300 ease-in-out" /> <img src="/images/Tesla.svg" alt="Tesla" class="h-10 grayscale hover:grayscale-0 hover:scale-105 transition-all duration-300 ease-in-out" /> <img src="/images/Toyota.svg" alt="Toyota" class="h-10 grayscale hover:grayscale-0 hover:scale-105 transition-all duration-300 ease-in-out" /> <img src="/images/BMW.svg" alt="BMW" class="h-10 grayscale hover:grayscale-0 hover:scale-105 transition-all duration-300 ease-in-out" /> <img src="/images/Audi-Logo.svg" alt="Audi" class="h-10 grayscale hover:grayscale-0 hover:scale-105 transition-all duration-300 ease-in-out" />
+                    </div>
+                </div>
+            </section>
+            <section class="bg-gradient-to-r from-gray-50 to-white py-16 px-4 sm:px-6 lg:px-8">
+                <div class="max-w-5xl mx-auto px-4 text-center">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-4">What Our Clients Say</h2>
+                    <p class="text-gray-500 mb-12 max-w-xl mx-auto mt-6"> Real feedback from happy car renters who found their perfect vehicle through our platform. </p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <!-- Testimonial 1 -->
+                        <div class="bg-white p-6 rounded-3xl shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105" data-aos="fade-up" data-aos-delay="100">
+                            <div class="flex justify-center mb-4"> <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Client photo" class="w-16 h-16 rounded-full shadow-md" /> </div>
+                            <p class="text-gray-700 italic mb-4 leading-relaxed">"Super easy process and the car was in amazing condition. Definitely using this site again!"</p>
+                            <p class="font-semibold text-gray-900">Sarah Johnson</p>
+                            <p class="text-sm text-gray-500">Marketing Executive</p>
+                        </div> <!-- Testimonial 2 -->
+                        <div class="bg-white p-6 rounded-3xl shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105" data-aos="fade-up" data-aos-delay="200">
+                            <div class="flex justify-center mb-4"> <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Client photo" class="w-16 h-16 rounded-full shadow-md" /> </div>
+                            <p class="text-gray-700 italic mb-4 leading-relaxed">"The search filters are top-notch. I found my ideal rental in minutes."</p>
+                            <p class="font-semibold text-gray-900">David Nguyen</p>
+                            <p class="text-sm text-gray-500">UX Designer</p>
+                        </div> <!-- Testimonial 3 -->
+                        <div class="bg-white p-6 rounded-3xl shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105" data-aos="fade-up" data-aos-delay="300">
+                            <div class="flex justify-center mb-4"> <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="Client photo" class="w-16 h-16 rounded-full shadow-md" /> </div>
+                            <p class="text-gray-700 italic mb-4 leading-relaxed">"Fast booking, transparent prices, and amazing support. Totally recommended!"</p>
+                            <p class="font-semibold text-gray-900">Emily Carter</p>
+                            <p class="text-sm text-gray-500">Freelance Developer</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="bg-white py-32 px-6 sm:px-8 lg:px-16" data-aos="fade-up">
+                <div class="max-w-5xl mx-auto text-center">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4" data-aos="fade-up"> Stay Ahead of the Curve </h2>
+                    <p class="text-base sm:text-lg text-gray-600 mb-12" data-aos="fade-up"> Get instant updates on limited-time deals, new arrivals, and exclusive CarBook offers—delivered right to your inbox. </p>
+                    <form class="flex flex-col sm:flex-row items-center justify-center gap-6 max-w-xl mx-auto mb-16" data-aos="fade-up"> <input type="email" placeholder="Your email address" class="w-full sm:flex-1 px-4 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-red-500 transition" /> <button type="submit" class="bg-red-500 hover:bg-red-600 text-white font-semibold px-6 py-2 rounded-full shadow-md transition-all duration-300"> Subscribe Now </button> </form> <!-- Benefits List -->
+                    <div class="flex flex-col sm:flex-row justify-center gap-10 text-gray-700 text-sm sm:text-base max-w-4xl mx-auto">
+                        <div class="flex items-center gap-4 justify-center" data-aos="fade-up"> <svg class="w-6 h-6 text-red-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13H9v5h4v-2h-2V5z" />
+                            </svg> Real-time Inventory Updates </div>
+                        <div class="flex items-center gap-4 justify-center" data-aos="fade-up"> <svg class="w-6 h-6 text-red-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M3 3a1 1 0 000 2h2l.34 2.31A4 4 0 009.24 11h1.52a4 4 0 003.9-3.69L15 5h2a1 1 0 100-2H3z" />
+                                <path d="M7 13a2 2 0 100 4 2 2 0 000-4zm6 0a2 2 0 100 4 2 2 0 000-4z" />
+                            </svg> Early Access to Promotions </div>
+                        <div class="flex items-center gap-4 justify-center" data-aos="fade-up"> <svg class="w-6 h-6 text-red-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M16 8a6 6 0 11-12 0 6 6 0 0112 0zm-5.41 2.59l2.3-2.3a1 1 0 00-1.42-1.42L10 8.17 8.53 6.7a1 1 0 00-1.42 1.42l2.3 2.3a1 1 0 001.42 0z" />
+                            </svg> Unsubscribe Anytime </div>
+                        <div class="flex items-center gap-4 justify-center" data-aos="fade-up"> <svg class="w-6 h-6 text-red-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13H9v5h4v-2h-2V5z" />
+                            </svg> Exclusive Member Benefits </div>
+                    </div>
+                </div>
+            </section>
+        </main> <!-- Footer Section (Pro Version) -->
+        <footer class="bg-gray-950 text-gray-300 py-16">
+            <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12">
+                <!-- Brand -->
+                <div>
+                    <h3 class="text-white text-2xl font-bold mb-3">Cargo</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed"> Driving the future of car buying.<br /> Premium, fast, and 100% online. </p>
+                </div> <!-- Navigation -->
+                <div>
+                    <h4 class="text-white text-lg font-semibold mb-4">Explore</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-red-500 transition">Home</a></li>
+                        <li><a href="#" class="hover:text-red-500 transition">Inventory</a></li>
+                        <li><a href="#" class="hover:text-red-500 transition">Why Cargo</a></li>
+                        <li><a href="#" class="hover:text-red-500 transition">Contact</a></li>
+                    </ul>
+                </div> <!-- Support -->
+                <div>
+                    <h4 class="text-white text-lg font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-red-500 transition">FAQs</a></li>
+                        <li><a href="#" class="hover:text-red-500 transition">Help Center</a></li>
+                        <li><a href="#" class="hover:text-red-500 transition">Financing</a></li>
+                        <li><a href="#" class="hover:text-red-500 transition">Terms & Conditions</a></li>
+                    </ul>
+                </div> <!-- Contact -->
+                <div>
+                    <h4 class="text-white text-lg font-semibold mb-4">Get in Touch</h4>
+                    <p class="text-sm text-gray-400"> Email: <a href="mailto:support@cargo.com" class="text-red-500 hover:underline">support@cargo.com</a> </p>
+                    <p class="text-sm mt-2 text-gray-400">Phone: (123) 456-7890</p>
+                    <div class="flex gap-4 mt-4 text-xl text-gray-400"> <a href="#" class="hover:text-red-500 transition">🌐</a> <a href="#" class="hover:text-red-500 transition">📘</a> <a href="#" class="hover:text-red-500 transition">📸</a> </div>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-800 pt-6 text-center text-sm text-gray-500"> &copy; 2025 <span class="text-white font-semibold">Cargo</span>. All rights reserved. </div>
+        </footer>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+<script src="https://unpkg.com/@studio-freight/lenis@1.0.32"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+    // Example of image list
+    document.addEventListener('DOMContentLoaded', () => {
+    
+        AOS.init({
+            duration: 1000, // Animation duration in milliseconds
+            easing: 'ease-in-out', // Animation easing
+            once: true, // Trigger the animation once when scrolled into view
+        });
+    
+        const lenis = new Lenis({
+            duration: 1.5, // Adjusts smoothness
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Custom easing
+            smoothWheel: true,
+            smoothTouch: true,
+            direction: 'horizontal', // Makes scrolling horizontal
+        });
+    
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+    
+        requestAnimationFrame(raf);
+    });
+</script>
+
+</html>

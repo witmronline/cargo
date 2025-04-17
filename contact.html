@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <!-- Basic Meta -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Cargo - Premium Car Dealers</title>
+  <meta name="description" content="Have questions or want to book a test drive? Get in touch with the Cargo team. We're here to help you find your perfect premium ride." />
+  <meta name="keywords" content="contact Cargo, book test drive, car dealership phone, luxury cars contact, premium auto dealer support" />
+  <meta name="author" content="Cargo" />
+
+  <!-- Open Graph (Facebook, LinkedIn) -->
+  <meta property="og:title" content="Contact Cargo | Book a Test Drive or Ask a Question" />
+  <meta property="og:description" content="Reach out to Cargo for inquiries, test drives, or support. Our team is ready to assist you with your next premium car." />
+  <meta property="og:image" content="https://yourdomain.com/assets/images/contact-preview.jpg" />
+  <meta property="og:url" content="https://yourdomain.com/contact" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contact Cargo | Book a Test Drive or Ask a Question" />
+  <meta name="twitter:description" content="We're here to help. Contact the Cargo team for bookings, collaborations, or quick questions." />
+  <meta name="twitter:image" content="https://yourdomain.com/assets/images/contact-preview.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/tailwind.css" />
+  <link rel="stylesheet" href="/global.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+
+<body>
+  <div class="bg-base-200">
+    <!-- Navbar -->
+<header class="bg-white shadow-sm sticky top-0 z-50" x-data="{ mobileOpen: false }">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+    <!-- Logo -->
+    <a href="/">
+      <h1 class="text-2xl font-bold text-gray-900">Car<span class="text-red-500">go</span></h1>
+    </a>
+
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex space-x-6">
+      <a href="/" class="text-gray-700 hover:text-red-500 transition">Home</a>
+      <a href="/inventory.html" class="text-gray-700 hover:text-red-500 transition">Inventory</a>
+      <a href="/about.html" class="text-gray-700 hover:text-red-500 transition">About</a>
+      <a href="/contact.html" class="text-gray-700 hover:text-red-500 transition">Contact</a>
+    </nav>
+
+    <!-- Mobile Menu Button -->
+    <button @click="mobileOpen = !mobileOpen" class="md:hidden text-gray-700 hover:text-red-500 focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div
+    class="md:hidden px-4 pb-4"
+    x-show="mobileOpen"
+    x-transition:enter="transition ease-out duration-300"
+    x-transition:enter-start="opacity-0 -translate-y-2"
+    x-transition:enter-end="opacity-100 translate-y-0"
+    x-transition:leave="transition ease-in duration-200"
+    x-transition:leave-start="opacity-100 translate-y-0"
+    x-transition:leave-end="opacity-0 -translate-y-2"
+    x-cloak
+  >
+    <nav class="flex flex-col space-y-3">
+      <a href="/" class="text-gray-700 hover:text-red-500 transition">Home</a>
+      <a href="/inventory.html" class="text-gray-700 hover:text-red-500 transition">Inventory</a>
+      <a href="/about.html" class="text-gray-700 hover:text-red-500 transition">About</a>
+      <a href="/contact.html" class="text-gray-700 hover:text-red-500 transition">Contact</a>
+    </nav>
+  </div>
+</header>
+
+
+    <main class="container max-w-4xl mx-auto px-4 md:px-8 py-16">
+      <!-- Hero Heading -->
+      <div class="text-center mb-12" data-aos="fade-up">
+          <h1 class="text-4xl font-bold">Get in Touch</h1>
+          <p class="text-gray-600 mt-4 max-w-xl mx-auto">Have a question, want to book a test drive, or collaborate? Reach out and we'll get back to you promptly.</p>
+      </div>
+  
+      <!-- Contact Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-20">
+          <!-- Book a Test Drive -->
+          <div class="card bg-primary text-primary-content shadow-md rounded-xl p-6 hover:scale-105 transition-transform" data-aos="fade-up" data-aos-delay="100">
+              <h3 class="text-xl font-semibold mb-2">Book a Test Drive</h3>
+              <p>Experience the thrill of your next car. Schedule a test drive today.</p>
+              <a href="#test-drive-form" class="btn btn-sm mt-4 bg-white text-primary font-semibold hover:bg-gray-100">Schedule Now</a>
+          </div>
+  
+          <!-- Visit Us -->
+          <div class="card bg-base-100 shadow-md rounded-xl p-6 hover:scale-105 transition-transform" data-aos="fade-up" data-aos-delay="200">
+              <h3 class="text-xl font-semibold mb-2">Visit Us</h3>
+              <p>Come to our showroom and speak with our team directly.</p>
+              <a href="#" class="text-blue-500 hover:underline mt-2">View on Google Maps</a>
+          </div>
+  
+          <!-- Call Us -->
+          <div class="card bg-base-100 shadow-md rounded-xl p-6 hover:scale-105 transition-transform" data-aos="fade-up" data-aos-delay="300">
+              <h3 class="text-xl font-semibold mb-2">Call Us</h3>
+              <p>Have a quick question? Give us a call anytime.</p>
+              <a href="tel:+18885551234" class="text-blue-500 hover:underline mt-2">+1 (888) 555-1234</a>
+          </div>
+  
+          <!-- Email Us -->
+          <div class="card bg-base-100 shadow-md rounded-xl p-6 hover:scale-105 transition-transform" data-aos="fade-up" data-aos-delay="400">
+              <h3 class="text-xl font-semibold mb-2">Email Us</h3>
+              <p>Prefer email? Reach out to us directly via email.</p>
+              <a href="mailto:contact@yoursite.com" class="text-blue-500 hover:underline mt-2 select-all">contact@yoursite.com</a>
+          </div>
+      </div>
+  
+      <!-- Car Image + Form Section -->
+      <div class="flex flex-col lg:flex-row items-stretch gap-10">
+          <!-- Car Image -->
+          <div class="lg:w-1/2 w-full rounded-2xl overflow-hidden shadow-xl" data-aos="fade-right" data-aos-delay="500">
+              <img src="https://img.freepik.com/free-photo/3d-electric-car-with-charged-battery-symbol_23-2148972408.jpg" alt="Luxury Car" class="w-full h-full object-cover"/>
+          </div>
+  
+          <!-- Contact Form -->
+          <div class="lg:w-1/2 w-full bg-white dark:bg-base-200 rounded-2xl shadow-xl p-8 border border-gray-200 dark:border-gray-700" data-aos="fade-left" data-aos-delay="600">
+              <h2 class="text-2xl font-semibold mb-6">Send Us a Message</h2>
+              <form class="space-y-5">
+                  <div>
+                      <label class="block text-sm font-medium mb-1">Name</label>
+                      <input type="text" class="input input-bordered w-full" placeholder="Your name" required>
+                  </div>
+                  <div>
+                      <label class="block text-sm font-medium mb-1">Email</label>
+                      <input type="email" class="input input-bordered w-full" placeholder="mail@example.com" required>
+                  </div>
+                  <div>
+                      <label class="block text-sm font-medium mb-1">Phone</label>
+                      <input type="tel" class="input input-bordered w-full" placeholder="1234567890" required>
+                  </div>
+                  <div>
+                      <label class="block text-sm font-medium mb-1">Message</label>
+                      <textarea rows="4" class="textarea textarea-bordered w-full" placeholder="Your message..." required></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary w-full mt-4">Submit</button>
+              </form>
+          </div>
+      </div>
+  </main>
+    
+    
+      <!-- Footer Section (Pro Version) -->
+<footer class="bg-gray-950 text-gray-300 py-16">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12">
+
+    <!-- Brand -->
+    <div>
+      <h3 class="text-white text-2xl font-bold mb-3">Cargo</h3>
+      <p class="text-sm text-gray-400 leading-relaxed">
+        Driving the future of car buying.<br />
+        Premium, fast, and 100% online.
+      </p>
+    </div>
+
+    <!-- Navigation -->
+    <div>
+      <h4 class="text-white text-lg font-semibold mb-4">Explore</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:text-red-500 transition">Home</a></li>
+        <li><a href="#" class="hover:text-red-500 transition">Inventory</a></li>
+        <li><a href="#" class="hover:text-red-500 transition">Why Cargo</a></li>
+        <li><a href="#" class="hover:text-red-500 transition">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Support -->
+    <div>
+      <h4 class="text-white text-lg font-semibold mb-4">Support</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:text-red-500 transition">FAQs</a></li>
+        <li><a href="#" class="hover:text-red-500 transition">Help Center</a></li>
+        <li><a href="#" class="hover:text-red-500 transition">Financing</a></li>
+        <li><a href="#" class="hover:text-red-500 transition">Terms & Conditions</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div>
+      <h4 class="text-white text-lg font-semibold mb-4">Get in Touch</h4>
+      <p class="text-sm text-gray-400">
+        Email: <a href="mailto:support@cargo.com" class="text-red-500 hover:underline">support@cargo.com</a>
+      </p>
+      <p class="text-sm mt-2 text-gray-400">Phone: (123) 456-7890</p>
+      <div class="flex gap-4 mt-4 text-xl text-gray-400">
+        <a href="#" class="hover:text-red-500 transition">🌐</a>
+        <a href="#" class="hover:text-red-500 transition">📘</a>
+        <a href="#" class="hover:text-red-500 transition">📸</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="mt-12 border-t border-gray-800 pt-6 text-center text-sm text-gray-500">
+    &copy; 2025 <span class="text-white font-semibold">Cargo</span>. All rights reserved.
+  </div>
+</footer>
+
+  </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+<script src="https://unpkg.com/@studio-freight/lenis@1.0.32"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+    // Example of image list
+    document.addEventListener('DOMContentLoaded', () => {
+    
+        AOS.init({
+            duration: 1000, // Animation duration in milliseconds
+            easing: 'ease-in-out', // Animation easing
+            once: true, // Trigger the animation once when scrolled into view
+        });
+    
+        const lenis = new Lenis({
+            duration: 1.5, // Adjusts smoothness
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Custom easing
+            smoothWheel: true,
+            smoothTouch: true,
+            direction: 'horizontal', // Makes scrolling horizontal
+        });
+    
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+    
+        requestAnimationFrame(raf);
+    });
+</script>
+</html>

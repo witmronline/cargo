@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <!-- Basic Meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | Cargo - Premium Car Dealers</title>
+    <meta name="description" content="Discover Cargo's story, mission, and the team behind the premium car experience. Learn how we combine performance, luxury, and innovation for every customer." />
+    <meta name="keywords" content="About Cargo, our story, car dealership team, premium cars, luxury vehicles, Cargo mission, car company background" />
+    <meta name="author" content="Cargo" />
+  
+    <!-- Open Graph (Facebook, LinkedIn) -->
+    <meta property="og:title" content="About Cargo | Premium Car Sellers" />
+    <meta property="og:description" content="Get to know the story and team behind Cargo. We're redefining the driving experience through luxury and innovation." />
+    <meta property="og:image" content="https://yourdomain.com/assets/images/about-preview.jpg" />
+    <meta property="og:url" content="https://yourdomain.com/about" />
+    <meta property="og:type" content="website" />
+  
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="About Cargo | Premium Car Sellers" />
+    <meta name="twitter:description" content="Learn about the vision and people behind Cargo. We're passionate about performance, luxury, and customer experience." />
+    <meta name="twitter:image" content="https://yourdomain.com/assets/images/about-preview.jpg" />
+  
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/tailwind.css" />
+    <link rel="stylesheet" href="/global.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  </head>
+  
+
+<body>
+    <div class="bg-base-200">
+        <!-- Navbar -->
+<header class="bg-white shadow-sm sticky top-0 z-50" x-data="{ mobileOpen: false }">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+    <!-- Logo -->
+    <a href="/">
+      <h1 class="text-2xl font-bold text-gray-900">Car<span class="text-red-500">go</span></h1>
+    </a>
+
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex space-x-6">
+      <a href="/" class="text-gray-700 hover:text-red-500 transition">Home</a>
+      <a href="/inventory.html" class="text-gray-700 hover:text-red-500 transition">Inventory</a>
+      <a href="/about.html" class="text-gray-700 hover:text-red-500 transition">About</a>
+      <a href="/contact.html" class="text-gray-700 hover:text-red-500 transition">Contact</a>
+    </nav>
+
+    <!-- Mobile Menu Button -->
+    <button @click="mobileOpen = !mobileOpen" class="md:hidden text-gray-700 hover:text-red-500 focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div
+    class="md:hidden px-4 pb-4"
+    x-show="mobileOpen"
+    x-transition:enter="transition ease-out duration-300"
+    x-transition:enter-start="opacity-0 -translate-y-2"
+    x-transition:enter-end="opacity-100 translate-y-0"
+    x-transition:leave="transition ease-in duration-200"
+    x-transition:leave-start="opacity-100 translate-y-0"
+    x-transition:leave-end="opacity-0 -translate-y-2"
+    x-cloak
+  >
+    <nav class="flex flex-col space-y-3">
+      <a href="/" class="text-gray-700 hover:text-red-500 transition">Home</a>
+      <a href="/inventory.html" class="text-gray-700 hover:text-red-500 transition">Inventory</a>
+      <a href="/about.html" class="text-gray-700 hover:text-red-500 transition">About</a>
+      <a href="/contact.html" class="text-gray-700 hover:text-red-500 transition">Contact</a>
+    </nav>
+  </div>
+</header>
+
+        
+<!-- About Us Page -->
+<section class="bg-white py-24">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- Hero -->
+    <div class="text-center mb-24" data-aos="fade-up">
+      <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-gray-900">
+        Driven by Passion. Powered by Trust.
+      </h1>
+      <p class="mt-5 text-lg text-gray-700 max-w-2xl mx-auto">
+        Our mission is simple: help you find the perfect car—effortlessly, confidently, and with peace of mind.
+      </p>
+    </div>
+
+    <!-- Our Journey -->
+    <div class="grid md:grid-cols-2 gap-14 items-center mb-28" data-aos="fade-up" data-aos-delay="100">
+      <div>
+        <h2 class="text-3xl font-bold text-gray-900 mb-5">Our Journey</h2>
+        <p class="text-gray-700 text-lg leading-relaxed">
+          Since 2010, we've been transforming the car buying experience. Starting as a small team with a big vision, we’ve grown into a trusted brand known for innovation, transparency, and top-tier service.
+        </p>
+      </div>
+      <img src="https://img.freepik.com/free-photo/3d-electric-car-with-charged-battery_23-2148972415.jpg" alt="Our journey"
+        class="rounded-2xl shadow-xl w-full h-auto object-cover">
+    </div>
+
+    <!-- Core Values -->
+    <div class="text-center mb-28" data-aos="fade-up" data-aos-delay="150">
+      <h2 class="text-3xl font-bold text-gray-900 mb-12">Our Core Values</h2>
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-10 max-w-5xl mx-auto">
+        <div>
+          <h3 class="text-xl font-semibold text-red-600 mb-3">Transparency</h3>
+          <p class="text-gray-700">Upfront pricing, no hidden fees, and total clarity at every step.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold text-red-600 mb-3">Customer First</h3>
+          <p class="text-gray-700">We design every touchpoint with your satisfaction in mind.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold text-red-600 mb-3">Innovation</h3>
+          <p class="text-gray-700">We leverage tech to simplify, personalize, and elevate your car search.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Meet the Team -->
+    <div class="mb-28" data-aos="fade-up" data-aos-delay="200">
+      <h2 class="text-3xl font-bold text-center text-gray-900 mb-14">Meet Our Team</h2>
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-14 text-center">
+        
+        <div>
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Alex Johnson"
+            class="w-24 h-24 rounded-full mx-auto mb-4 object-cover shadow-md">
+          <h4 class="font-semibold text-lg text-gray-900">Alex Johnson</h4>
+          <p class="text-red-600 text-sm mt-1">Founder & CEO</p>
+        </div>
+
+        <div>
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Maria Lee"
+            class="w-24 h-24 rounded-full mx-auto mb-4 object-cover shadow-md">
+          <h4 class="font-semibold text-lg text-gray-900">Maria Lee</h4>
+          <p class="text-red-600 text-sm mt-1">Lead Sales Advisor</p>
+        </div>
+
+        <div>
+          <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="James Carter"
+            class="w-24 h-24 rounded-full mx-auto mb-4 object-cover shadow-md">
+          <h4 class="font-semibold text-lg text-gray-900">James Carter</h4>
+          <p class="text-red-600 text-sm mt-1">Customer Success</p>
+        </div>
+
+        <div>
+          <img src="https://randomuser.me/api/portraits/women/55.jpg" alt="Nina Patel"
+            class="w-24 h-24 rounded-full mx-auto mb-4 object-cover shadow-md">
+          <h4 class="font-semibold text-lg text-gray-900">Nina Patel</h4>
+          <p class="text-red-600 text-sm mt-1">Marketing Strategist</p>
+        </div>
+
+        <div>
+          <img src="https://randomuser.me/api/portraits/men/81.jpg" alt="Daniel Kim"
+            class="w-24 h-24 rounded-full mx-auto mb-4 object-cover shadow-md">
+          <h4 class="font-semibold text-lg text-gray-900">Daniel Kim</h4>
+          <p class="text-red-600 text-sm mt-1">Finance Expert</p>
+        </div>
+
+        <div>
+          <img src="https://randomuser.me/api/portraits/women/28.jpg" alt="Claire Nguyen"
+            class="w-24 h-24 rounded-full mx-auto mb-4 object-cover shadow-md">
+          <h4 class="font-semibold text-lg text-gray-900">Claire Nguyen</h4>
+          <p class="text-red-600 text-sm mt-1">UX Designer</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="text-center" data-aos="zoom-in" data-aos-delay="300">
+      <h3 class="text-2xl font-bold text-gray-900 mb-6">Find your perfect ride—right now.</h3>
+      <a href="/inventory"
+        class="inline-block bg-red-600 hover:bg-red-700 text-white px-10 py-3 rounded-full text-lg font-medium transition duration-300 shadow-lg">
+        Browse Cars
+      </a>
+    </div>
+
+  </div>
+</section>
+
+  
+            <!-- Footer Section (Pro Version) -->
+<footer class="bg-gray-950 text-gray-300 py-16">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12">
+
+    <!-- Brand -->
+    <div>
+      <h3 class="text-white text-2xl font-bold mb-3">Cargo</h3>
+      <p class="text-sm text-gray-400 leading-relaxed">
+        Driving the future of car buying.<br />
+        Premium, fast, and 100% online.
+      </p>
+    </div>
+
+    <!-- Navigation -->
+    <div>
+      <h4 class="text-white text-lg font-semibold mb-4">Explore</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:text-red-500 transition">Home</a></li>
+        <li><a href="#" class="hover:text-red-500 transition">Inventory</a></li>
+        <li><a href="#" class="hover:text-red-500 transition">Why Cargo</a></li>
+        <li><a href="#" class="hover:text-red-500 transition">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Support -->
+    <div>
+      <h4 class="text-white text-lg font-semibold mb-4">Support</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:text-red-500 transition">FAQs</a></li>
+        <li><a href="#" class="hover:text-red-500 transition">Help Center</a></li>
+        <li><a href="#" class="hover:text-red-500 transition">Financing</a></li>
+        <li><a href="#" class="hover:text-red-500 transition">Terms & Conditions</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div>
+      <h4 class="text-white text-lg font-semibold mb-4">Get in Touch</h4>
+      <p class="text-sm text-gray-400">
+        Email: <a href="mailto:support@cargo.com" class="text-red-500 hover:underline">support@cargo.com</a>
+      </p>
+      <p class="text-sm mt-2 text-gray-400">Phone: (123) 456-7890</p>
+      <div class="flex gap-4 mt-4 text-xl text-gray-400">
+        <a href="#" class="hover:text-red-500 transition">🌐</a>
+        <a href="#" class="hover:text-red-500 transition">📘</a>
+        <a href="#" class="hover:text-red-500 transition">📸</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="mt-12 border-t border-gray-800 pt-6 text-center text-sm text-gray-500">
+    &copy; 2025 <span class="text-white font-semibold">Cargo</span>. All rights reserved.
+  </div>
+</footer>
+
+    </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+<script src="https://unpkg.com/@studio-freight/lenis@1.0.32"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+    // Example of image list
+    document.addEventListener('DOMContentLoaded', () => {
+    
+        AOS.init({
+            duration: 1000, // Animation duration in milliseconds
+            easing: 'ease-in-out', // Animation easing
+            once: true, // Trigger the animation once when scrolled into view
+        });
+    
+        const lenis = new Lenis({
+            duration: 1.5, // Adjusts smoothness
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Custom easing
+            smoothWheel: true,
+            smoothTouch: true,
+            direction: 'horizontal', // Makes scrolling horizontal
+        });
+    
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+    
+        requestAnimationFrame(raf);
+    });
+</script>
+</html>
